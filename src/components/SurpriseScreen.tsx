@@ -1,10 +1,10 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { assets } from '../assets/assets';
-// import musicFile from '../assets/music.mp3';
 import useTypingEffect from '../hooks/useTypingEffect';
+// import musicFile from '../assets/music.mp3';
 
 const SurpriseScreen = () => {
-  const audioRef = useRef(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const playAudio = () => {
     if (audioRef.current) {
