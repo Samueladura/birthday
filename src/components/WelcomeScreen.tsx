@@ -1,7 +1,10 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
-const WelcomeScreen = ({ onUnlock }) => (
+type WelcomeScreenProps = {
+  onUnlock: () => void;
+};
+
+const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onUnlock }) => (
   <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-pink-200 via-purple-200 to-blue-200 p-4">
     <motion.h1 
       className="text-4xl md:text-5xl font-semibold mb-6 text-center text-gray-800"
