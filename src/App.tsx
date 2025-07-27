@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import WelcomeScreen from './components/WelcomeScreen';
 import GreetingScreen from './components/GreetingScreen';
 import SurpriseScreen from './components/SurpriseScreen';
