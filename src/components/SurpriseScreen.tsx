@@ -1,7 +1,11 @@
 import { useRef, useEffect } from 'react';
-import { assets } from '../assets/assets';
+import musicFile from '../assets/music.mp3';
+import gallery1 from '../assets/gallery1.png';
+import gallery2 from '../assets/gallery2.png';
+import gallery3 from '../assets/gallery3.png';
+import gallery4 from '../assets/gallery4.png';
+import gallery5 from '../assets/gallery5.png';
 import useTypingEffect from '../hooks/useTypingEffect';
-// import musicFile from '../assets/music.mp3';
 
 const SurpriseScreen = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -21,19 +25,19 @@ const SurpriseScreen = () => {
   const letterText = `
 Happy Birthday, Logos Jewel Temilola (a.k.a BossLady) 💖,
 
-But before I start the wishing, I remembered vividely when we started talking at urp just like yesterday(smiles😅). 
+But before I start the wishing, I remembered vividly when we started talking at URP just like yesterday (smiles😅). 
 
-Well I actually thought you were gentle not until I knew you better that you're troublesome(there's nothing you can do for me😜).
+Well, I actually thought you were gentle until I knew you better you’re troublesome (there's nothing you can do for me😜).
 
-How I became your elder brother I don't still know what or how it happened all I knew was you were calling me big bro.
+How I became your elder brother I still don’t know all I knew was you started calling me big bro.
 
-She's one of the soul that disturd's me in UNIOSUN, any small thing she'll enter my DM drop stickers and she's always checking up if not regularlly sha
+She's one of the souls that disturb me in UNIOSUN. Any small thing, she’ll enter my DM, drop stickers, and check up on me maybe not regularly sha.
 
-Something about this girl is that she does not eat, sleep all she wants to do is to read and since when I knew her she never completed a programming language not me always disturbing her to finish up with the one she started before moving to another one😅.
+Something about this girl is that she does not eat or sleep all she wants to do is read. And since I knew her, she has never completed a programming language 😂. Not me always disturbing her to finish up one before starting another 😅.
 
 Today, the world celebrates someone truly remarkable. Not just because it’s your birthday, but because someone as rare, radiant, and deeply cherished as you walks this earth.
 
-You’re not just special… you’re a masterpiece. An hardworking girl, intelligence, beauty, and unwavering courage. Thank you for being a good friend like a sister a troublesome one.
+You’re not just special… you’re a masterpiece hardworking, intelligent, beautiful, and filled with unwavering courage. Thank you for being a good friend, like a sister (a troublesome one though 😄).
 
 As you celebrate another year of greatness, I pray your days are drenched in peace, joy, and victories that leave your heart full. May all the love you pour into others return to you a thousandfold.
 
@@ -43,9 +47,9 @@ Here’s to this new year of your life being the most magical yet full of answer
 
 I cherish you beyond what words could ever express.
 
-Try and finish up your Python and Javascript. 
+Try and finish up your Python and JavaScript. 😂
 
-With all my love,
+With all my love,  
 Sammy 🌹
 `;
 
@@ -64,35 +68,36 @@ Sammy 🌹
         Memories Gallery
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        {/* Use the manually imported image here */}
         <img
-          src={assets.gallery1}
+          src={gallery1}
           alt="Memory 1"
           className="rounded-lg shadow-md object-cover w-full h-64"
         />
         <img
-          src={assets.gallery2}
+          src={gallery2}
           alt="Memory 2"
           className="rounded-lg shadow-md object-cover w-full h-64"
         />
         <img
-          src={assets.gallery3}
+          src={gallery3}
           alt="Memory 3"
           className="rounded-lg shadow-md object-cover w-full h-64"
         />
         <img
-          src={assets.gallery4}
+          src={gallery4}
           alt="Memory 4"
           className="rounded-lg shadow-md object-cover w-full h-64"
         />
         <img
-          src={assets.gallery5}
+          src={gallery5}
           alt="Memory 5"
-          className="rounded-lg shadow-md object-cover w-64 aspect-square md:col-span-2"
+          className="rounded-lg shadow-md object-cover w-full aspect-square md:col-span-2"
         />
       </div>
-
-      <audio ref={audioRef} src={assets.music} loop />
-      </div>
+      
+      <audio ref={audioRef} src={musicFile} loop />
+    </div>
   );
 };
 
