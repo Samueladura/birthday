@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import giftImage from '../assets/giftImage.png'; // Placeholder gift image
+import giftImage from '../assets/giftImage.png';
 
 interface GreetingScreenProps {
   onGiftClick: () => void;
